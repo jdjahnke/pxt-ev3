@@ -89,8 +89,8 @@ Create a new program:
 ```blocks
 brick.buttonEnter.onEvent(ButtonEvent.Pressed, function () {
     motors.largeBC.tank(50, 50)
-    sensors.ultrasonic4.setThreshold(UltrasonicSensorEvent.ObjectDetected, 6)
-    sensors.ultrasonic4.pauseUntil(UltrasonicSensorEvent.ObjectDetected);
+    sensors.ultrasonic4.setThreshold(UltrasonicSensorEvent.ObjectNear, 6)
+    sensors.ultrasonic4.pauseUntil(UltrasonicSensorEvent.ObjectNear)
     motors.stopAll()
 })
 ```
